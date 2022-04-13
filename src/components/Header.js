@@ -99,13 +99,13 @@ function Header() {
                   <Slider value={arraySize} valueLabelDisplay="auto" disabled={isDisabled} onChange={handleSizeSlider}/>
               </Box>
             </Box>
-            <Button variant="outlined" sx={{margin: "30px auto"}} onClick={handleNewArray}> Generate New Array</Button>
+            <Button variant="outlined" sx={{margin: "30px auto"}} onClick={handleNewArray} disabled={isDisabled}> Generate New Array</Button>
             <Box sx={{width: "80%", margin: "40px auto", display: "flex", justifyContent: "space-between"}}>
-                <Button size="small" variant="outlined" onClick={handleBubbleSort}>Bubble Sort</Button>
-                <Button size="small" variant="outlined" onClick={handleInsertionSort}>Insertion Sort</Button>
-                <Button size="small" variant="outlined" onClick={handleMergeSort}>Merge Sort</Button>
-                <Button size="small" variant="outlined" onClick={handleQuickSort}>Quick Sort</Button>
-                <Button size="small" variant="outlined" onClick={handleHeapSort}>Heap Sort</Button>
+                <Button size="small" variant="outlined" onClick={handleBubbleSort} disabled={isDisabled}>Bubble Sort</Button>
+                <Button size="small" variant="outlined" onClick={handleInsertionSort} disabled={isDisabled}>Insertion Sort</Button>
+                <Button size="small" variant="outlined" onClick={handleMergeSort} disabled={isDisabled}>Merge Sort</Button>
+                <Button size="small" variant="outlined" onClick={handleQuickSort} disabled={isDisabled}>Quick Sort</Button>
+                <Button size="small" variant="outlined" onClick={handleHeapSort} disabled={isDisabled}>Heap Sort</Button>
             </Box>
             {/* <Button onClick={testSort}>Test Sort</Button> */}
       </Box>
